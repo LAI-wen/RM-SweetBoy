@@ -490,7 +490,7 @@ Scene_Title.prototype.drawGameTitle = function () {
   var maxWidth = Graphics.width - x * 2;
   var text = $dataSystem.gameTitle;
   this._gameTitleSprite.bitmap.outlineColor = "black";
-  this._gameTitleSprite.bitmap.outlineWidth = 4;
+  this._gameTitleSprite.bitmap.outlineWidth = 8;
   this._gameTitleSprite.bitmap.fontSize = 72;
   this._gameTitleSprite.bitmap.drawText(text, x, y, maxWidth, 48, "center");
 };
@@ -986,6 +986,8 @@ Scene_Menu.prototype.create = function () {
   Scene_MenuBase.prototype.create.call(this);
   this.createCommandWindow();
   this.createGoldWindow();
+  //主角狀態視窗
+  this.createPlayerStatusWindow();
   this.createStatusWindow();
 };
 

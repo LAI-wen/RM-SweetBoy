@@ -38,11 +38,9 @@ Window_Base.prototype.lineHeight = function () {
 
 Window_Base.prototype.standardFontFace = function () {
   if ($gameSystem.isChinese()) {
-    //return 'SimHei, Heiti TC, sans-serif';
-    return "GameFont";
+    return "SimHei, Heiti TC, sans-serif";
   } else if ($gameSystem.isKorean()) {
-    //return 'Dotum, AppleGothic, sans-serif';
-    return "GameFont";
+    return "Dotum, AppleGothic, sans-serif";
   } else {
     return "GameFont";
   }
@@ -176,10 +174,6 @@ Window_Base.prototype.textColor = function (n) {
   var px = 96 + (n % 8) * 12 + 6;
   var py = 144 + Math.floor(n / 8) * 12 + 6;
   return this.windowskin.getPixel(px, py);
-};
-
-Window_Base.prototype.grayedOutColor = function () {
-  return this.textColor(8); // 定義一個灰色的顏色
 };
 
 Window_Base.prototype.normalColor = function () {
@@ -1493,16 +1487,6 @@ Window_Command.prototype.refresh = function () {
   this.makeCommandList();
   this.createContents();
   Window_Selectable.prototype.refresh.call(this);
-};
-
-//更改字的顏色大小
-
-Window_Command.prototype.resetTextColor = function () {
-  this.changeTextColor(this.textColor(15));
-};
-
-Window_Command.prototype.standardFontSize = function () {
-  return 20;
 };
 
 //-----------------------------------------------------------------------------

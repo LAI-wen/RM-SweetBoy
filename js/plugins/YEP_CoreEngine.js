@@ -8,11 +8,11 @@ Imported.YEP_CoreEngine = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.Core = Yanfly.Core || {};
-Yanfly.Core.version = 1.32;
+Yanfly.Core.version = 1.31;
 
 //=============================================================================
 /*:
- * @plugindesc v1.32 Needed for the majority of Yanfly Engine Scripts. Also
+ * @plugindesc v1.31 Needed for the majority of Yanfly Engine Scripts. Also
  * contains bug fixes found inherently in RPG Maker.
  * @author Yanfly Engine Plugins
  *
