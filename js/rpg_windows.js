@@ -36,6 +36,7 @@ Window_Base.prototype.lineHeight = function () {
   return 36;
 };
 
+<<<<<<< HEAD
 // 修改字體
 
 Window_Base.prototype.standardFontFace = function () {
@@ -43,6 +44,13 @@ Window_Base.prototype.standardFontFace = function () {
     return "GameFont";
   } else if ($gameSystem.isKorean()) {
     return "GameFont";
+=======
+Window_Base.prototype.standardFontFace = function () {
+  if ($gameSystem.isChinese()) {
+    return "SimHei, Heiti TC, sans-serif";
+  } else if ($gameSystem.isKorean()) {
+    return "Dotum, AppleGothic, sans-serif";
+>>>>>>> master
   } else {
     return "GameFont";
   }
@@ -1636,12 +1644,16 @@ Window_MenuCommand.prototype.numVisibleRows = function () {
   return this.maxItems();
 };
 
+<<<<<<< HEAD
 //  新增指令清單
+=======
+>>>>>>> master
 Window_MenuCommand.prototype.makeCommandList = function () {
   this.addMainCommands();
   this.addFormationCommand();
   this.addOriginalCommands();
   this.addOptionsCommand();
+<<<<<<< HEAD
   //新增[讀檔案]
   this.addLoadCommand();
 
@@ -1649,6 +1661,10 @@ Window_MenuCommand.prototype.makeCommandList = function () {
   this.addGameEndCommand();
   //新增[系統貼心提醒]
   this.addRemindCommand();
+=======
+  this.addSaveCommand();
+  this.addGameEndCommand();
+>>>>>>> master
 };
 
 Window_MenuCommand.prototype.addMainCommands = function () {
@@ -1690,22 +1706,28 @@ Window_MenuCommand.prototype.addSaveCommand = function () {
   }
 };
 
+<<<<<<< HEAD
 //新增[讀取檔案功能]指令
 Window_MenuCommand.prototype.addLoadCommand = function () {
   this.addCommand("讀取檔案", "load", true);
 };
 
+=======
+>>>>>>> master
 Window_MenuCommand.prototype.addGameEndCommand = function () {
   var enabled = this.isGameEndEnabled();
   this.addCommand(TextManager.gameEnd, "gameEnd", enabled);
 };
 
+<<<<<<< HEAD
 //新增[系統貼心提醒]指令
 Window_MenuCommand.prototype.addRemindCommand = function () {
   var enabled = this.isGameEndEnabled();
   this.addCommand("系統貼心提醒", "gameEnd", enabled);
 };
 
+=======
+>>>>>>> master
 Window_MenuCommand.prototype.needsCommand = function (name) {
   var flags = $dataSystem.menuCommands;
   if (flags) {
@@ -1747,12 +1769,15 @@ Window_MenuCommand.prototype.isGameEndEnabled = function () {
   return true;
 };
 
+<<<<<<< HEAD
 // 貼心小提醒 [修改return]
 
 Window_MenuCommand.prototype.isRemindEnabled = function () {
   return true;
 };
 
+=======
+>>>>>>> master
 Window_MenuCommand.prototype.processOk = function () {
   Window_MenuCommand._lastCommandSymbol = this.currentSymbol();
   Window_Command.prototype.processOk.call(this);
@@ -1800,9 +1825,14 @@ Window_MenuStatus.prototype.itemHeight = function () {
   return Math.floor(clientHeight / this.numVisibleRows());
 };
 
+<<<<<<< HEAD
 // 修改高度 /橫列數量
 Window_MenuStatus.prototype.numVisibleRows = function () {
   return 1;
+=======
+Window_MenuStatus.prototype.numVisibleRows = function () {
+  return 4;
+>>>>>>> master
 };
 
 Window_MenuStatus.prototype.loadImages = function () {
@@ -1811,11 +1841,18 @@ Window_MenuStatus.prototype.loadImages = function () {
   }, this);
 };
 
+<<<<<<< HEAD
 //繪製內容
 Window_MenuStatus.prototype.drawItem = function (index) {
   this.drawItemBackground(index);
   this.drawItemImage(index);
   //this.drawItemStatus(index);
+=======
+Window_MenuStatus.prototype.drawItem = function (index) {
+  this.drawItemBackground(index);
+  this.drawItemImage(index);
+  this.drawItemStatus(index);
+>>>>>>> master
 };
 
 Window_MenuStatus.prototype.drawItemBackground = function (index) {
@@ -1828,6 +1865,7 @@ Window_MenuStatus.prototype.drawItemBackground = function (index) {
   }
 };
 
+<<<<<<< HEAD
 //繪製圖片
 Window_MenuStatus.prototype.drawItemImage = function (index) {
   var rect = this.itemRect(index);
@@ -1867,6 +1905,22 @@ Window_MenuStatus.prototype.drawActorCG = function (
 };
 
 //繪製資料
+=======
+Window_MenuStatus.prototype.drawItemImage = function (index) {
+  var actor = $gameParty.members()[index];
+  var rect = this.itemRect(index);
+  this.changePaintOpacity(actor.isBattleMember());
+  this.drawActorFace(
+    actor,
+    rect.x + 1,
+    rect.y + 1,
+    Window_Base._faceWidth,
+    Window_Base._faceHeight
+  );
+  this.changePaintOpacity(true);
+};
+
+>>>>>>> master
 Window_MenuStatus.prototype.drawItemStatus = function (index) {
   var actor = $gameParty.members()[index];
   var rect = this.itemRect(index);
@@ -1982,8 +2036,12 @@ Window_ItemCategory.prototype.windowWidth = function () {
   return Graphics.boxWidth;
 };
 
+<<<<<<< HEAD
 // 修改角色選單垂直為水平
 Window_MenuStatus.prototype.maxCols = function () {
+=======
+Window_ItemCategory.prototype.maxCols = function () {
+>>>>>>> master
   return 4;
 };
 
@@ -6422,15 +6480,23 @@ Window_TitleCommand.prototype.windowWidth = function () {
 };
 
 Window_TitleCommand.prototype.updatePlacement = function () {
+<<<<<<< HEAD
   this.x = ((Graphics.boxWidth - this.width) / 2) * 1.85;
   this.y = Graphics.boxHeight - this.height - 140;
+=======
+  this.x = (Graphics.boxWidth - this.width) / 2;
+  this.y = Graphics.boxHeight - this.height - 96;
+>>>>>>> master
 };
 
 Window_TitleCommand.prototype.makeCommandList = function () {
   this.addCommand(TextManager.newGame, "newGame");
   this.addCommand(TextManager.continue_, "continue", this.isContinueEnabled());
   this.addCommand(TextManager.options, "options");
+<<<<<<< HEAD
   this.addCommand("END", "endGame");
+=======
+>>>>>>> master
 };
 
 Window_TitleCommand.prototype.isContinueEnabled = function () {
