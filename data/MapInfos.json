@@ -1,9 +1,5 @@
 [
 null,
-<<<<<<< HEAD
-{"id":1,"expanded":false,"name":"MAP001","order":1,"parentId":0,"scrollX":719.1111111111111,"scrollY":389.3333333333333},
-{"id":2,"expanded":false,"name":"房子 1","order":2,"parentId":0,"scrollX":719.1111111111111,"scrollY":389.3333333333333}
-=======
-{"id":1,"expanded":false,"name":"MAP001","order":1,"parentId":0,"scrollX":719.1111111111111,"scrollY":389.3333333333333}
->>>>>>> master
+{"id":1,"expanded":true,"name":"MAP001","order":1,"parentId":0,"scrollX":555.1111111111111,"scrollY":389.3333333333333},
+{"id":2,"expanded":false,"name":"旅館 2F","order":2,"parentId":1,"scrollX":555.1111111111111,"scrollY":389.3333333333333}
 ]

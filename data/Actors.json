@@ -1,14 +1,7 @@
 [
 null,
-<<<<<<< HEAD
-{"id":1,"battlerName":"Actor1_1","characterIndex":0,"characterName":"Actor1","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"主角","nickname":"","note":"<menuStatus_picture:Actor1_5>","profile":""},
-{"id":2,"battlerName":"Actor1_2","characterIndex":1,"characterName":"Actor1","classId":1,"equips":[0,0,0,0,0],"faceIndex":1,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"2","nickname":"","note":"<menuStatus_picture:Actor1_6>","profile":""},
-{"id":3,"battlerName":"Actor1_3","characterIndex":2,"characterName":"Actor1","classId":1,"equips":[0,0,0,0,0],"faceIndex":2,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"3","nickname":"","note":"<menuStatus_picture:Actor1_3>","profile":""},
-{"id":4,"battlerName":"Actor1_4","characterIndex":3,"characterName":"Actor1","classId":1,"equips":[0,0,0,0,0],"faceIndex":3,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"4","nickname":"","note":"<menuStatus_picture:Actor1_4>","profile":""}
-=======
 {"id":1,"battlerName":"Actor1_1","characterIndex":0,"characterName":"Actor1","classId":1,"equips":[1,1,2,3,0],"faceIndex":0,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"哈羅德","nickname":"","note":"","profile":""},
 {"id":2,"battlerName":"Actor1_2","characterIndex":1,"characterName":"Actor1","classId":2,"equips":[2,1,2,3,0],"faceIndex":1,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"特雷澤","nickname":"","note":"","profile":""},
 {"id":3,"battlerName":"Actor1_3","characterIndex":2,"characterName":"Actor1","classId":3,"equips":[3,0,2,3,4],"faceIndex":2,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"瑪莎","nickname":"","note":"","profile":""},
 {"id":4,"battlerName":"Actor1_4","characterIndex":3,"characterName":"Actor1","classId":4,"equips":[4,0,2,3,4],"faceIndex":3,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"盧修斯","nickname":"","note":"","profile":""}
->>>>>>> master
 ]
