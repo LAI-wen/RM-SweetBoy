@@ -167,7 +167,7 @@ Window_Base.prototype.initialize = function (x, y, width, height) {
   this._opening = false;
   this._closing = false;
   this._dimmerSprite = null;
-  this.opacity = 0; // 設置窗口背景透明
+  //this.opacity = 0; // 設置窗口背景透明
 };
 
 ///--------------------/----------------------------------------------------------------

@@ -507,10 +507,6 @@ Scene_Title.prototype.createCommandWindow = function () {
   this._commandWindow.setHandler("newGame", this.commandNewGame.bind(this));
   this._commandWindow.setHandler("continue", this.commandContinue.bind(this));
   this._commandWindow.setHandler("options", this.commandOptions.bind(this));
-<<<<<<< HEAD
-  this._commandWindow.setHandler("endGame", this.commandEndGame.bind(this));
-=======
->>>>>>> master
   this.addWindow(this._commandWindow);
 };
 
@@ -521,16 +517,6 @@ Scene_Title.prototype.commandNewGame = function () {
   SceneManager.goto(Scene_Map);
 };
 
-<<<<<<< HEAD
-//commandEndGame的定義
-Scene_Title.prototype.commandEndGame = function () {
-  this._commandWindow.close();
-  this.fadeOutAll();
-  SceneManager.exit();
-};
-
-=======
->>>>>>> master
 Scene_Title.prototype.commandContinue = function () {
   this._commandWindow.close();
   SceneManager.push(Scene_Load);
@@ -1000,11 +986,8 @@ Scene_Menu.prototype.create = function () {
   Scene_MenuBase.prototype.create.call(this);
   this.createCommandWindow();
   this.createGoldWindow();
-<<<<<<< HEAD
-=======
   //主角狀態視窗
   this.createPlayerStatusWindow();
->>>>>>> master
   this.createStatusWindow();
 };
 
@@ -1013,11 +996,6 @@ Scene_Menu.prototype.start = function () {
   this._statusWindow.refresh();
 };
 
-<<<<<<< HEAD
-//建立指令視窗
-
-=======
->>>>>>> master
 Scene_Menu.prototype.createCommandWindow = function () {
   this._commandWindow = new Window_MenuCommand(0, 0);
   this._commandWindow.setHandler("item", this.commandItem.bind(this));
@@ -1027,11 +1005,6 @@ Scene_Menu.prototype.createCommandWindow = function () {
   this._commandWindow.setHandler("formation", this.commandFormation.bind(this));
   this._commandWindow.setHandler("options", this.commandOptions.bind(this));
   this._commandWindow.setHandler("save", this.commandSave.bind(this));
-<<<<<<< HEAD
-  //新增指令load
-  this._commandWindow.setHandler("load", this.commandLoad.bind(this));
-=======
->>>>>>> master
   this._commandWindow.setHandler("gameEnd", this.commandGameEnd.bind(this));
   this._commandWindow.setHandler("cancel", this.popScene.bind(this));
   this.addWindow(this._commandWindow);
@@ -1077,15 +1050,6 @@ Scene_Menu.prototype.commandSave = function () {
   SceneManager.push(Scene_Save);
 };
 
-<<<<<<< HEAD
-//建立讀黨的function
-
-Scene_Menu.prototype.commandLoad = function () {
-  SceneManager.push(Scene_Load);
-};
-
-=======
->>>>>>> master
 Scene_Menu.prototype.commandGameEnd = function () {
   SceneManager.push(Scene_GameEnd);
 };
